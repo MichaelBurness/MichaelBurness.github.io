@@ -1,0 +1,29 @@
+{
+	"compileOnSave": true,
+	"compilerOptions": {
+		"target": "es5",
+		"module": "esnext",
+		"moduleResolution": "node",
+		"sourceMap": true,
+		"declaration": false,
+		"emitDecoratorMetadata": true,
+		"experimentalDecorators": true,
+		"removeComments": false,
+		"noImplicitAny": true,
+		"strict": true,
+		"noImplicitThis": true,
+		"noImplicitReturns": true,
+		"typeRoots": [
+			"node_modules/@types"
+		],
+		"lib": [
+			"es2017",
+			"dom"
+		],
+		"outDir": "scripts"
+	},
+	"exclude": [
+		"node_modules",
+		"jspm_packages"
+	]
+}

@@ -1,0 +1,31 @@
+﻿#languages {
+	margin-top: 0.5rem;
+	height: 1.8rem;
+
+	@media only screen and (max-width: 991px) {
+		margin-bottom: 1rem;
+	}
+
+	a {
+		margin-left: 0.5rem;
+		cursor: pointer;
+
+		&.active {
+			opacity: 0.3;
+			cursor: default;
+		}
+
+		img {
+			height: 100%;
+		}
+	}
+}
+
+.title {
+	margin: 0;
+}
+
+.collapse-button {
+	font-size: 1.5rem;
+	cursor: pointer;
+}

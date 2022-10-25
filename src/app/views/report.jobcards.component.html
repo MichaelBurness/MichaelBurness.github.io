@@ -1,0 +1,27 @@
+<div *ngIf="!isDenied && !isInitializing">
+	<ichen-report-header [i18n]="i18n" [disabled]="isBusy" [collapsed]="collapseHeader" [title]="title"
+											 [useDateRange]="true" [controllersList]="controllersList" (run)="runReportAsync($event)">
+	</ichen-report-header>
+
+	<div id="chartContainer" class="card card-body" [hidden]="!showChart || isError || isDenied">
+		<div id="chartCanvas"></div>
+
+		<div id="imgLoading" *ngIf="isBusy" class="text-center">
+			<img src="/images/loading.gif" />
+		</div>
+	</div>
+</div>
+
+<div id="imgLoading" *ngIf="isInitializing">
+	<img src="/images/loading.gif" />
+</div>
+
+<div id="imgError" *ngIf="isError">
+	<p><img src="/images/alert.png" /></p>
+	<h2>{{i18n.textError}}</h2>
+</div>
+
+<div id="imgNoAuthority" *ngIf="isDenied">
+	<p><img src="/images/stopsign.png" /></p>
+	<h2>{{i18n.textNoAuthority}}</h2>
+</div>

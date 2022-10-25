@@ -1,0 +1,86 @@
+﻿#chartContainer {
+	margin-top: 1rem;
+	min-height: 38rem;
+	padding: 0;
+}
+
+#chartCanvas {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+}
+
+// Special coloring
+
+.ics-NoValue {
+	.ics-Series path {
+		fill: #fff;
+		opacity: 0.7;
+	}
+
+	.ics-Bullet text {
+		fill: #aaa;
+	}
+}
+
+.ics-Unknown {
+	.ics-Series path {
+		fill: #ff0;
+		stroke: #f00;
+	}
+
+	.ics-Bullet text {
+		fill: #700;
+	}
+}
+
+.ics-OffLine, ics-OffLine {
+	.ics-Series path {
+		fill: #eee;
+		stroke: #ccc;
+	}
+
+	.ics-Bullet text {
+		fill: #333;
+	}
+}
+
+// Export menu
+
+.ics-amexport-top a {
+	color: black;
+	text-decoration: none;
+}
+
+.ics-amexport-item {
+	border: 1px solid #777 !important;
+	background-color: #eee !important;
+	width: auto !important;
+	height: auto !important;
+	padding: 0.2em 0.5em !important;
+	white-space: nowrap !important;
+}
+
+.ics-amexport-top .ics-amexport-item > .ics-amexport-menu {
+	top: -3px !important;
+	left: 2px;
+}
+
+.ics-amexport-label {
+	padding: 0 !important;
+}
+
+.ics-amexport-right .ics-amexport-item > .ics-amexport-menu {
+	margin-right: 115% !important;
+}
+
+.ics-amexport-item {
+	transition: none !important;
+}
+
+.ics-amexport-item:hover {
+	background-color: orange !important;
+	transition: none !important;
+}
